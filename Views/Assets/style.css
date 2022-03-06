@@ -1,0 +1,81 @@
+.wrapper{
+    width: 500px;
+    margin: 20px auto 0;
+    
+}
+
+form{
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 10px 0 20px 0;
+    background-color: #f1f1f1;
+}
+
+
+.form-group,
+.btn-group{
+    padding: 10px 10px 0 10px;
+}
+
+
+.form-group label{
+    font-weight: bold;
+}
+.form-group label,
+.form-group input{
+    display: block;
+    
+}
+
+.form-group input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn-group input{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.register-btn{
+    float: right;
+    margin-top:5px;
+}
+
+
+.message_box{
+    width: 480px;
+    background: #f1f1f1;
+    border-left:3px solid #00bcd4;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}

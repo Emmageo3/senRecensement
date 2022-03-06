@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteRule ^([a-zA-Z0-9_-]*)/?([a-zA-Z0-9_-]*)?/?([a-zA-Z0-9_-]*)$ index.php?controller=$1&action=$2&param=$3 [NC,L]
