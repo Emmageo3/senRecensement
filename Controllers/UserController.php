@@ -30,7 +30,7 @@ class UserController{
             
             $this->Redirect( 'User', 'LoggedIn' );
         }else{
-            $_SESSION['__message'] = 'Sai username hoặc password, vui lòng thử lại!';
+            $_SESSION['__message'] = 'Erreur !';
             $this->Redirect( 'User', 'Login' );
         }
     }
@@ -75,7 +75,7 @@ class UserController{
         $errors = array();
         foreach( $data as $key=> $value ){
             if( $value === '' ){
-                $errors[] =  'Vui lòng nhập vào <b>'. ucfirst( $key ) . '</b>.';
+                $errors[] =  'Erreur !'. ucfirst( $key ) . '</b>.';
             }
         }
         
@@ -84,14 +84,14 @@ class UserController{
         }
         
         if( $this->model->is_username_exists( $data['username'] ) ){
-            $errors[] = 'Username đã tồn tại, vui lòng chọn username khác.';
+            $errors[] = 'Erreur.';
         }
         
         if( empty( $errors ) ){
             if( $this->model->Addnew( $data ) ){
                 $this->Redirect( 'User', 'Registered' );
             }else{
-                $_SESSION['__errors'] = 'Không thể đăng ký, vui lòng thử lại!';
+                $_SESSION['__errors'] = 'Erreur!';
                 $this->Redirect( 'User', 'Register' );
             }
         }else{
@@ -110,7 +110,7 @@ class UserController{
         if( file_exists( $file_name ) ){
             include( $file_name );
         }else{
-            echo "Không tồn tại view!";
+            echo "hey!";
             
         }
     }
