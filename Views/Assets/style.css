@@ -1,20 +1,22 @@
+
+
 body{
     margin: 0;
     padding: 0;
 }
 .wrapper{
-    width: 500px;
+    width: 700px;
     margin: 20px auto 0;
-    
 }
 
 form{
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     padding: 10px 0 20px 0;
-    background-color: #aa9f9f;
+    background-color: #e9e0e0;
     color: white;
 }
+
 
 
 .form-group,
@@ -25,6 +27,7 @@ form{
 
 .form-group label{
     font-weight: bold;
+    color: white;
 }
 .form-group label,
 .form-group input{
@@ -84,3 +87,9 @@ form{
     margin: auto;
     margin-bottom: 20px;
 }
+
+
+
+
+
+

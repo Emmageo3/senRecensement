@@ -30,10 +30,28 @@ class UserController{
             
             $this->Redirect( 'User', 'LoggedIn' );
         }else{
-            $_SESSION['__message'] = 'Erreur !';
+            $_SESSION['__message'] = 'Nom d\'utilisateur ou mot de passe incorrect !';
             $this->Redirect( 'User', 'Login' );
         }
     }
+
+    /*CRUD*/
+    public function Create(){
+        $this->View( 'Create' );
+    }
+
+    public function Read(){
+        $this->View('Read');
+    }
+
+    public function Update(){
+        $this->View('Update');
+    }
+
+    public function Delete(){
+        $this->View('Delete');
+    }
+    
     
     public function LoggedIn(){
         if( $this->IsLoggedIn() ){
@@ -110,7 +128,7 @@ class UserController{
         if( file_exists( $file_name ) ){
             include( $file_name );
         }else{
-            echo "hey!";
+            echo "cette vue n'existe pas !";
             
         }
     }
