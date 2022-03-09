@@ -24,7 +24,7 @@
                 <a class="nav-link" href="#">Voir les organisations</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Ajouter une organisation</a>
+                <a class="nav-link" href="<?php echo BASE_URL; ?>/Org/Create">Ajouter une organisation</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="<?php echo BASE_URL; ?>/User/Logout">Se déconnecter!</a>
